@@ -47,9 +47,9 @@ int main(int argc, char** argv) {
     fclose(fp);
 
     // write output file
-    char fppath[BUFSIZ];
-    sprintf(fppath, OUT_FILE, argv[2]);
-    fp = fopen(fppath, "wb");
+    char fp_path[BUFSIZ];
+    sprintf(fp_path, OUT_FILE, argv[2]);
+    fp = fopen(fp_path, "wb");
     if (!fp) {
         printf("Error opening file %s.seg", argv[2]);
         return EXIT_FAILURE;
