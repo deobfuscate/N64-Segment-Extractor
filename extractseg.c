@@ -56,6 +56,7 @@ int main(int argc, char** argv) {
     }
     fwrite(file_buffer, sizeof(char), seg_size, fp);
     fclose(fp);
+    free(file_buffer);
 
     printf("Wrote file %s.seg", argv[2]);
     return EXIT_SUCCESS;
