@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
         return EXIT_FAILURE;
     }
     fseek(fp, start, SEEK_SET);
-    file_buffer = (char*)malloc(sizeof(char) * seg_size);
+    file_buffer = (char*) malloc(sizeof(char) * seg_size);
     fread(file_buffer, sizeof(char), seg_size, fp);
     fclose(fp);
 
